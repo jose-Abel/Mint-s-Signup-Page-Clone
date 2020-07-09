@@ -1,6 +1,6 @@
 /*------------------------- Common Styles ----------------------------*/
 *, *:before, *:after {
-  margin: 0; 
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -132,6 +132,7 @@ body {
 .form-box {
   margin-top: 1rem;
   border: 0.1rem solid var(--color-border);
+  width: 38rem;
 }
 
 .form {
@@ -151,6 +152,7 @@ body {
   flex-direction: column;
   text-align: center;
   margin-bottom: 2rem;
+  font-size: 1.4rem;
 }
 
 .form-text p {
@@ -163,7 +165,7 @@ body {
 }
 
 label {
-  color: gray; 
+  color: gray;
 }
 
 .email-address, .phone-number, .your-password {
@@ -215,4 +217,42 @@ input:focus {
   margin-right: 1rem;
 }
 
+.legal-acceptance {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
 
+.legal-acceptance p {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+  color: gray;
+  padding: 2rem;
+  line-height: 2rem;
+  box-sizing: border-box;
+}
+.legal-acceptance a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.form-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+}
+
+.form-footer p {
+  color: gray;
+}
+
+.form-footer a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
