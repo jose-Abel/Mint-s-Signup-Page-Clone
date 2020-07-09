@@ -15,26 +15,75 @@
     <main>
       <div class="main-top">
         <div class="logo-box">
-          <a hre="#" class="intuit-logo"><img src="img/intuit-logo.png"></a>
+          <a href="#" class="intuit-logo"><img src="img/intuit-logo.png"></a>
         </div>
       <div class="main-bottom">
         <ul class="companies">
-          <li class="mint-logo"><img src="img/mint-logo.svg"></li>
-          <li class="mint-company"><img src="img/mint-company.svg"></li>
-          <li class="quickbooks-logo"><img src="img/quickbooks-logo.svg"></li>
-          <li class="quickbooks-company"><img src="img/quickbooks-company.svg"></li>
-          <li class="turbotax-logo"><img src="img/turbotax-logo.svg"></li>
-          <li class="turbotax-company"><img src="img/turbotax-company.svg"></li>
+          <li class="mint-logo"><a href="https://www.mint.com/" target="_blank"><img src="img/mint-logo.svg"></a></li>
+          <li class="mint-company"><a href="https://www.mint.com/" target="_blank"><img src="img/mint-company.svg"></a></li>
+          <li class="quickbooks-logo"><a href="https://quickbooks.intuit.com/" target="_blank"><img src="img/quickbooks-logo.svg"></a></li>
+          <li class="quickbooks-company"><a href="https://quickbooks.intuit.com/" target="_blank"><img src="img/quickbooks-company.svg"></a></li>
+          <li class="turbotax-logo"><a href="https://turbotax.intuit.com/" target="_blank"><img src="img/turbotax-logo.svg"></a></li>
+          <li class="turbotax-company"><a href="https://turbotax.intuit.com/" target="_blank"><img src="img/turbotax-company.svg"></a></li>
         </ul>
       </div>
       </div>
 
-      <div>
-        <form>
+      <div class="form-box">
+        <h3>Create an Intuit Account</h3>
+        <p>One account for everything Intuit, including Mint.</p>
+        <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn more</a>
 
+        <form>
+          <label for="email">Email adress</label>
+          <div class="email-address">
+            <input type="email" id="email" name="email">
+          </div>
+
+          <label for="phone">Phone (recommended)</label>
+          <div class="phone-number">
+            <input type="tel" id="phone" name="phone">
+          </div>
+
+          <label for="password">Email adress</label>
+          <div class="your-password">
+            <input type="password" id="password" name="password"><i class="fas fa-unlock-alt"></i>
+            <button class="submit-button">
+            <i class="fas fa-lock"></i>
+            <span>Create Account</span>
+            </button>
+
+            <p>By clicking Create account, you agree to our
+              <a href="https://www.mint.com/terms" target="_blank">Terms</a> and have read and acknowledge our
+              <a href="https://security.intuit.com/privacy" target="_blank">Privacy Statement</a>
+            </p>
+          </div>
         </form>
 
+        <div class="form-footer">
+          <p>Invisible reCAPTCHA by Google <a href="https://www.google.com/intl/en/policies/privacy/" target="_blank">Privacy Policy</a> and <a href="https://policies.google.com/terms?hl=en" target="_blank">Terms of Use.</a></p>
+        </div>
       </div>
     </main>
+
+    <footer>
+
+      <div class="top-footer">
+        <a href="https://www.intuit.com/legal/" target="_blank">Legal</a> <a href="https://www.intuit.com/privacy/" target="_blank">Privacy</a> <a href="https://security.intuit.com/" target="_blank">Security</a>
+      </div>
+
+      <div class="bottom-footer">
+
+        <p>© 2020 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.</p>
+
+        <p>
+        Terms and conditions, features, support, pricing, and service options subject to change without notice.
+        </p>
+
+      </div>
+
+    </footer>
+
   </body>
+
 </html>
