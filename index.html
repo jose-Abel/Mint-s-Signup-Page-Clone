@@ -34,24 +34,31 @@
       </div>
       <!-- Form -->
       <div class="form-box">
-        <h3>Create an Intuit Account</h3>
-        <p>One account for everything Intuit, including Mint.</p>
-        <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn more</a>
+        <form class="form">
+          <h3>Create an Intuit Account</h3>
+          <div class="form-text">
+            <p>One account for everything Intuit, including Mint.</p>
+            <a href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account">Learn more</a>
+          </div>
 
-        <form>
           <label for="email">Email adress</label>
           <div class="email-address">
             <input type="email" id="email" name="email">
           </div>
 
           <label for="phone">Phone (recommended)</label>
-          <div class="phone-number">
-            <input type="tel" id="phone" name="phone">
-          </div>
+          <div class="phone-rates">
+            <div class="phone-number">
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <p id="rates-span">Standard call, messaging or data rates may apply.</p>
+          </div>  
+            
 
-          <label for="password">Email adress</label>
+          <label for="password">Password</label>
           <div class="your-password">
             <input type="password" id="password" name="password"><i class="fas fa-unlock-alt"></i>
+          </div>
             <button class="submit-button">
             <i class="fas fa-lock"></i>
             <span>Create Account</span>
