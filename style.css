@@ -39,11 +39,9 @@ body {
   font-size: 1.4rem;
   margin-right: 1rem;
   text-align: right;
-}
-
-.header-text p {
   color: grey;
 }
+
 
 .header-text a, .form-text a, .legal-acceptance a, .form-footer a {
   text-decoration: none;
@@ -60,13 +58,6 @@ body {
   text-decoration: none;
 }
 
-.header-button:focus {
-  outline: none;
-}
-
-.header-button i {
-  margin-right: 1rem;
-}
 
 /*------------------------- Main Section ----------------------------*/
 
@@ -92,20 +83,10 @@ body {
   backface-visibility: hidden;
 }
 
-.companies div {
-  display: flex;
-  justify-content: center;
-}
-
-.companies div a {
-  text-decoration: none;
-}
 
 .mint-company, .quickbooks-company, .turbotax-company {
   margin-right: 1.5rem;
   margin-top: 0.5rem;
-  text-decoration: none;
-
 }
 
 .mint-logo, .quickbooks-logo, .turbotax-logo {
@@ -130,11 +111,13 @@ body {
 .form {
   background-color: white;
   padding: 3rem;
+  color: darkslategray;
+
 }
 
 .form h3 {
   font-size: 2.4rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -144,17 +127,9 @@ body {
   flex-direction: column;
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
-.form-text p {
-  color: gray;
-}
-
-
-label {
-  color: gray;
-}
 
 input {
   margin-top: 1rem;
@@ -191,7 +166,6 @@ input:focus {
   margin-top: -2rem;
   font-size: 1.2rem;
   margin-bottom: 3.5rem;
-  color: gray;
 }
 
 .submit-button {
@@ -207,11 +181,11 @@ input:focus {
   cursor: pointer;
 }
 
-.submit-button:focus {
+.header-button:focus, .submit-button:focus {
   outline: none;
 }
 
-.submit-button i {
+.header-button i, .submit-button i {
   margin-right: 1rem;
 }
 
@@ -225,7 +199,6 @@ input:focus {
   font-size: 1.2rem;
   font-style: italic;
   font-weight: 300;
-  color: gray;
   padding: 2rem;
   line-height: 2rem;
   box-sizing: border-box;
@@ -246,7 +219,6 @@ input:focus {
   color: gray;
 }
 
-
 /*------------------------- Footer Section ----------------------------*/
 footer {
   padding: 0 2rem;
@@ -254,7 +226,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
