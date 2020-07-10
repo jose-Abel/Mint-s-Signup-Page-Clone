@@ -100,6 +100,7 @@ body {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  backface-visibility: hidden;
 }
 
 .companies li {
@@ -255,4 +256,135 @@ input:focus {
 .form-footer a {
   text-decoration: none;
   color: var(--color-primary);
+}
+
+/*------------------------- Footer Section ----------------------------*/
+footer {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+.top-footer a {
+  text-decoration: none;
+  margin-right: 1rem;
+  color: gray; 
+  font-size: 1.3rem;
+}
+
+.bottom-footer {
+  margin-top: 1rem;
+}
+
+.bottom-footer p {
+  color: gray;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/*------------------------- Animations ----------------------------*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1)
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*
+** --------- animation-name: --------------*
+** --------- animation-duration: -----------*
+** --------- animation-timing-function: ------------*
+** --------- animation-delay: ----------*
+** --------- animation-iteration-count: ---------*
+*/
+
+.animation-pulsate {
+  animation-fill-mode: backwards;
+  animation-name: pulsate;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+
+.animation-left {
+  display: flex;
+  animation-fill-mode: backwards;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+}
+
+.animation-up {
+  display: flex;
+  animation-fill-mode: backwards;
+  animation-name: moveInUp;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s;
+}
+
+.animation-right {
+  display: flex;
+  animation-fill-mode: backwards;
+  animation-name: moveInRight;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-delay: 3s;
 }
