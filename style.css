@@ -56,10 +56,12 @@ body {
   padding: 1rem 2rem;
   border-radius: 0.3rem;
   font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .header-button:focus {
   outline: none;
+  text
 }
 
 .header-button i {
@@ -173,22 +175,23 @@ label {
   color: gray;
 }
 
-.email-address, .phone-number, .your-password {
+input {
   margin-top: 1rem;
   margin-bottom: 3rem;
   width: 100%;
   padding: 1rem;
   border: 0.1rem solid var(--color-border);
   border-radius: 0.3rem;
-}
-
-input {
-  border: none;
-  width: 100%;
+  position: relative;
+  display: flex;
 }
 
 input:focus {
   outline: none;
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
+  position: relative;
+
 }
 
 .your-password {
@@ -197,6 +200,10 @@ input:focus {
 
 .your-password i {
   color: gray;
+  position: absolute;
+  bottom: 1rem;
+  display: flex;
+  transform: translateX(29rem);
 }
 
 #rates-span {
@@ -281,7 +288,7 @@ footer {
 .top-footer a {
   text-decoration: none;
   margin-right: 1rem;
-  color: gray; 
+  color: gray;
   font-size: 1.3rem;
 }
 
