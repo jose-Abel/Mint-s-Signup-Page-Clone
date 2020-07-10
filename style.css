@@ -58,6 +58,10 @@ body {
   font-size: 1.5rem;
 }
 
+.header-button:focus {
+  outline: none;
+}
+
 .header-button i {
   margin-right: 1rem;
 }
@@ -212,6 +216,11 @@ input:focus {
   background-color: var(--color-primary);
   border-radius: 0.3rem;
   margin-top: 2rem;
+  cursor: pointer;
+}
+
+.submit-button:focus {
+  outline: none;
 }
 
 .submit-button i {
