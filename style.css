@@ -196,14 +196,14 @@ input:focus {
 
 .your-password {
   display: flex;
+  position: relative;
 }
 
 .your-password i {
   color: gray;
   position: absolute;
-  bottom: 1rem;
-  display: flex;
-  transform: translateX(29rem);
+  bottom: 4rem;
+  right: 2rem;
 }
 
 #rates-span {
