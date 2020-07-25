@@ -1,20 +1,23 @@
-/*------------------------- Common Styles ----------------------------*/
-*, *:before, *:after {
+/* ------------------------- Common Styles ---------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
 
 html {
   font-size: 62.5%;
 }
 
 :root {
-  --color-background: #ECEEF1;
+  --color-background: #eceef1;
   --color-border: #c7c7c7;
-  --color-primary: #0077C5;
+  --color-primary: #0077c5;
 }
 
 body {
@@ -23,7 +26,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*------------------------- Header Section ----------------------------*/
+/* ------------------------- Header Section ---------------------------- */
+
 .header-section {
   display: flex;
   height: 6rem;
@@ -38,13 +42,13 @@ body {
   font-size: 1.4rem;
   margin-right: 1rem;
   text-align: right;
-}
-
-.header-text p {
   color: grey;
 }
 
-.header-text a {
+.header-text a,
+.form-text a,
+.legal-acceptance a,
+.form-footer a {
   text-decoration: none;
   color: var(--color-primary);
 }
@@ -59,23 +63,9 @@ body {
   text-decoration: none;
 }
 
-.header-button:focus {
-  outline: none;
-  text
-}
+/* ------------------------- Main Section ---------------------------- */
 
-.header-button i {
-  margin-right: 1rem;
-}
-
-/*------------------------- Main Section ----------------------------*/
-.main-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
+.main-section,
 .main-top {
   display: flex;
   flex-direction: column;
@@ -88,18 +78,6 @@ body {
   height: auto;
 }
 
-
-
-.logo-box a {
-  text-decoration: none;
-}
-
-.logo-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 .companies {
   list-style: none;
   display: flex;
@@ -109,33 +87,32 @@ body {
   backface-visibility: hidden;
 }
 
-.companies li {
-  display: flex;
-  justify-content: center;
-}
-
-.companies li a {
-  text-decoration: none;
-}
-
-.mint-company, .quickbooks-company, .turbotax-company {
+.mint-company,
+.quickbooks-company,
+.turbotax-company {
   margin-right: 1.5rem;
   margin-top: 0.5rem;
 }
 
-.mint-logo, .quickbooks-logo, .turbotax-logo {
+.mint-logo,
+.quickbooks-logo,
+.turbotax-logo {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 0.2rem;
 }
 
-.mint-logo img, .quickbooks-logo img, .turbotax-logo img {
+.logo-box img,
+.mint-logo img,
+.quickbooks-logo img,
+.turbotax-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-/*------------------------- Form Section ----------------------------*/
+/* ------------------------- Form Section ---------------------------- */
+
 .form-box {
   margin-top: 1rem;
   border: 0.1rem solid var(--color-border);
@@ -145,11 +122,12 @@ body {
 .form {
   background-color: white;
   padding: 3rem;
+  color: darkslategray;
 }
 
 .form h3 {
   font-size: 2.4rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -159,20 +137,7 @@ body {
   flex-direction: column;
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 1.4rem;
-}
-
-.form-text p {
-  color: gray;
-}
-
-.form-text a {
-  text-decoration: none;
-  color: var(--color-primary);
-}
-
-label {
-  color: gray;
+  font-size: 1.2rem;
 }
 
 input {
@@ -191,26 +156,24 @@ input:focus {
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   border: 1px solid rgba(81, 203, 238, 1);
   position: relative;
-
 }
 
 .your-password {
   display: flex;
+  position: relative;
 }
 
 .your-password i {
   color: gray;
   position: absolute;
-  bottom: 1rem;
-  display: flex;
-  transform: translateX(29rem);
+  bottom: 4rem;
+  right: 2rem;
 }
 
 #rates-span {
   margin-top: -2rem;
   font-size: 1.2rem;
   margin-bottom: 3.5rem;
-  color: gray;
 }
 
 .submit-button {
@@ -226,10 +189,12 @@ input:focus {
   cursor: pointer;
 }
 
+.header-button:focus,
 .submit-button:focus {
   outline: none;
 }
 
+.header-button i,
 .submit-button i {
   margin-right: 1rem;
 }
@@ -244,14 +209,9 @@ input:focus {
   font-size: 1.2rem;
   font-style: italic;
   font-weight: 300;
-  color: gray;
   padding: 2rem;
   line-height: 2rem;
   box-sizing: border-box;
-}
-.legal-acceptance a {
-  text-decoration: none;
-  color: var(--color-primary);
 }
 
 .form-footer {
@@ -269,19 +229,15 @@ input:focus {
   color: gray;
 }
 
-.form-footer a {
-  text-decoration: none;
-  color: var(--color-primary);
-}
+/* ------------------------- Footer Section ---------------------------- */
 
-/*------------------------- Footer Section ----------------------------*/
 footer {
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -303,7 +259,8 @@ footer {
   text-align: center;
 }
 
-/*------------------------- Animations ----------------------------*/
+/* ------------------------- Animations ---------------------------- */
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -350,7 +307,7 @@ footer {
 
 @keyframes pulsate {
   0% {
-    transform: scale(1)
+    transform: scale(1);
   }
 
   50% {
@@ -361,14 +318,6 @@ footer {
     transform: scale(1);
   }
 }
-
-/*
-** --------- animation-name: --------------*
-** --------- animation-duration: -----------*
-** --------- animation-timing-function: ------------*
-** --------- animation-delay: ----------*
-** --------- animation-iteration-count: ---------*
-*/
 
 .animation-pulsate {
   animation-fill-mode: backwards;
