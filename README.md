@@ -2,6 +2,7 @@
 
 This is the repository for the 2nd project on the HTML and CSS curriculum of Microverse titled "Displaying and Inputting Data" where we clone the Signup page for mint.com
 
+![screenshot](./app_screenshot.png)
 
 ## Built With
 - HTML
@@ -16,8 +17,14 @@ This is the repository for the 2nd project on the HTML and CSS curriculum of Mic
 ## Author2
 - 👤GitHub: https://github.com/jose-Abel
 
+
+## Live version
+https://stupefied-morse-c12225.netlify.app/
+
+
 ## Show your support
 Give a ⭐️ if you like this project!
+
 
 ## Acknowledgments
 - Inspiration
